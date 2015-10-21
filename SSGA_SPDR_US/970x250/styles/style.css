@@ -1,0 +1,333 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: georgia !important;
+  font-size: 28px !important;
+  color: #6fac5e; 
+  backface-visibility:hidden;
+}
+
+#adBox {
+  width: 970px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  visibility: hidden;
+  cursor: pointer;
+  /*background-color: #6fac5e;*/ }
+
+#border {
+  width: 968px;
+  height: 29px;
+  border: 1px solid #000;
+  position: absolute;
+  z-index: 1; }
+
+
+#bgExit {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 999; }
+
+#logo {
+  display:block;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.copy {
+  font-family: georgia;
+  font-size: 28px;
+
+  white-space: nowrap;
+  color: #325822;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%); }
+
+.colcopy {
+  font-family: georgia;
+  font-size: 20px !important;
+
+  white-space: nowrap;
+  color: #325822;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%); }
+
+
+.copy2 {
+  font-family: georgia;
+  font-size: 25px;
+
+  white-space: nowrap;
+  color: #325822;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%); }
+
+#colcopy-hidden1, #colcopy-hidden2{
+  position: absolute;
+  color: #fff;
+  opacity: 0; 
+  font-size: 20px !important; 
+  letter-spacing: .5px !important;}
+
+#colcopy-hidden1 {
+    top: 32px;
+    left: 243px;
+       
+}
+
+#colcopy-hidden2 {
+    top: 32px;
+    left: 433px;      
+}
+
+/*#colcopy-hidden3 {
+  top: 32px;
+  left: 545px;
+  font-size: 20px !important;  
+}*/
+#colcopyl1txt{
+   backface-visibility:hidden;
+}
+#colcopyl4txt{
+   backface-visibility:hidden;
+}
+#colcopywhite4{
+   backface-visibility:hidden;
+}
+#colcopywhite1colcopyl4{
+   backface-visibility:hidden;
+}
+
+#copy-white1, #copy-white2, #copy-white3 {
+  font-family: georgia;
+  font-size: 28px !important;
+  visibility: visible; }
+
+#copy-hidden1, #copy-hidden2, #copy-hidden3 {
+  position: absolute;
+  color: #fff;
+  opacity: 0; }
+
+#copy-hidden1 {
+    top: 110px;
+    left: 266px;
+    font-size: 28px !important;    
+}
+
+#copy-hidden2 {
+    top: 110px;
+    left: 394px;
+    width: 30px;
+    font-size: 28px !important;    
+}
+
+#copy-hidden3 {
+  top: 110px;
+  left: 545px;
+  font-size: 28px !important;  
+}
+
+#frame-10 {
+  width: 320px;
+  text-align: center; }
+
+#collapseCopy {
+  color: #325822;
+}
+
+button {
+  /*
+    background-color: #0068FF;
+    border: none;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+   */ 
+    outline: none;
+    background-color: #3e692d;
+    cursor: pointer;
+    
+}
+
+button:hover,
+button:active {
+    color: #3e692d;
+}
+button:active {
+    font-size: 11px;
+}
+
+#clickthrough-button1, #clickthrough-button2 {
+  width: 100%;
+  height: 100%;
+}
+
+#clickthrough-button {
+  opacity: 0 !important;
+}
+
+.label {
+    color: #0D2A4D;
+    position: absolute;
+    margin-left: 10px;
+    top: 35px;
+}
+
+#container {
+    position: absolute;
+    display: block;
+    width: 970px;
+    height: 250px;
+}
+#ad {
+    position: relative;
+    display: block;
+    left: 0px;
+    border: rgb(145, 153, 153) 1px solid;
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#ad.collapsed {
+    width: 970px;
+    /*2px smaller to account for border*/
+    
+    height: 90px;
+    /*2px smaller to account for border*/
+}
+#ad.expanded {
+    width: 970px;
+    /*2px smaller to account for border*/
+    
+    height: 250px;
+    /*2px smaller to account for border*/
+}
+#banner {
+    position: absolute;
+    display: block;
+    width: 970px;
+    height: 90px;
+    left: 0px;
+    background-color: #89a96f;
+    /*
+    background-image: url(../images/logo.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    */
+    overflow: hidden;
+}
+#panel {
+    position: absolute;
+    width: 970px;
+    height: 250px;
+    background-color: #89a96f;
+    overflow: hidden;
+}
+/*
+#panel {
+  height: 31px;
+}
+
+#panel.expand {
+  height: 250px;
+}
+*/
+.expanded #banner {
+    display: none;
+}
+.collapsed #panel {
+    display: none;
+}
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.button {
+    height: 26px;
+    width: 108px;
+}
+.button.close {
+    position: absolute;
+    top: 0px;
+    right: 6px;
+    width: 55px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#user-action-button {
+  visibility: hidden;
+}
+
+#expand-button, #clickToExpand, #close-button {
+  cursor: pointer;
+}
+
+#holder {
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: 500;
+  color: #fff;
+}
+
+.slide {
+    transition: all 10s ease;
+    -webkit-transition: all 10s ease;
+}
+
+/* add css styles here for banner elements that are not covered by setPos() */
+@media only screen and (max-device-width: 480px) {
+  .copy, .copy2 {
+    font-family: georgia;
+    font-size: 28px;
+  }    
+
+  #copy-hidden1 {
+    top: 110px;
+    left: 266px;
+font-size: 33px !important;
+    font-family: georgia;
+  }
+
+  #copy-hidden2 {
+    top: 110px;
+    left: 412px;
+    width: 40px;
+font-size: 33px !important;
+    font-family: georgia;      
+  }
+
+  #copy-hidden3 {
+    top: 110px;
+    left: 582px;
+font-size: 33px !important;
+    font-family: georgia;    
+  } 
+}

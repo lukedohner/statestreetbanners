@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SSGA_USGLOBAL_WSJ</title>
+	<meta charset="UTF-8">
+	<meta name="ad.size" content="width=970,height=250"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/styles.css?__inline=true" />
+  	<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>	
+	<!-- Insert stylesheets here. Path must end in "?__indline=true" to be compiled inline. -->
+</head>
+<body>
+	<noscript><a href="https://www.ssga.com"><img src="static.jpg"></a></noscript>
+
+	<div id="adBox">
+		<div id="border"></div>
+		<div id="bgExit"></div>
+		<div id="legal"><img src="legal.png"/></div>
+		<div id="cta"><img src="cta.png"/></div>
+		<div id="copy_f10"><img src="copy_F10.png" /></div>
+		<div id="copy_f9"><img src="copy_F9.png" /></div>
+		<div id="copy_f8"><img src="copy_F8.png" /></div>
+		<div id="copy_f7"><img src="copy_F7.png" /></div>
+		<div id="copy_f6"><img src="copy_F6.png" /></div>
+		<div id="logo"><img src="logo.png" /></div>
+		<div id="textHolder"></div>
+		<div id="mintCover"></div>
+		<div id="guide"></div>
+	</div>
+	
+	<script type="text/javascript" src="js/index.js?__inline=true"></script>
+	<!-- Insert scripts here. Path must end in "?__indline=true" to be compiled inline. -->
+	<script type="text/javascript">
+		window.onload = function() {
+			function initEB() {
+				if (typeof EB !== 'undefined') {
+				    if (!EB.isInitialized()) {
+				        EB.addEventListener(EBG.EventName.EB_INITIALIZED, CRAFTWW.startAd);
+				    } else {
+				        CRAFTWW.startAd();
+				    }
+				}else{
+					 CRAFTWW.startAd();
+				}
+			}
+
+			initEB();	
+		};
+		
+		function callClickTag(){
+			if (typeof EB !== 'undefined') {
+				 EB.clickthrough(); // jshint ignore:line
+			 } else {
+			 	window.open('https://www.ssga.com');
+			 }
+		};
+	</script>
+</body>
+</html>

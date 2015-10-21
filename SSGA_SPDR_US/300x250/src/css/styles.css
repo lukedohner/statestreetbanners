@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: georgia;
+  font-size: 22px; }
+
+#adBox {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  visibility: hidden;
+  background-color: #89a96f; }
+
+#border {
+  width: 298px;
+  height: 248px;
+  border: 1px solid #000;
+  position: absolute;
+  z-index: 1; }
+
+#bgExit {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 999; }
+
+#logo {
+  width: 140px;
+  height: 70px;
+  background-image: url("../logo.png");
+  background-size: cover;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.copy {
+  font-family: georgia;
+  font-size: 22px;
+  color: #3e692d;
+  white-space: nowrap;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%); }
+
+#copy-white1, #copy-white2, #copy-white3 {
+  visibility: visible; }
+
+#copy-hidden1, #copy-hidden2, #copy-hidden3 {
+  position: absolute;
+  color: #fff;
+  opacity: 0; }
+
+#copy-hidden1 {
+  top: 28px;
+  left: 21px; }
+
+#copy-hidden2 {
+  top: 28px;
+  left: 124px;
+  width: 30px; }
+
+#copy-hidden3 {
+  top: 56px;
+  left: 21px; }
+
+#frame-legal {
+  position: absolute;
+  display: block;
+  -webkit-backface-visibility: hidden; }
+
+/* add css styles here for banner elements that are not covered by setPos() */
+@media only screen and (max-device-width: 480px) {
+  .copy {
+    font-size: 15px; }
+
+  #copy-white1 {
+    margin-left: -4px; }
+
+  #copy-white2 {
+    margin-left: -4px; } }

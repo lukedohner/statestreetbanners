@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: georgia;
+  font-size: 18px;
+  color: #3e692d; }
+
+#adBox {
+  width: 920px;
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+  visibility: hidden;
+  background-color: #89a96f; }
+
+#border {
+  width: 918px;
+  height: 88px;
+  border: 1px solid #000;
+  position: absolute;
+  z-index: 100; }
+
+#bgExit {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 999; }
+
+.copy {
+  white-space: nowrap;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  -webkit-transition: font-size 1s ease;
+  -moz-transition: font-size 1s ease;
+  -o-transition: font-size 1s ease;
+  transition: font-size 1s ease; }
+
+/*
+.copy{
+	font-size: 18px;
+    text-align:center;
+
+    -webkit-transition: font-size ease 2s;
+    -moz-transition: font-size ease 2s;
+    -o-transition: font-size ease 2s;
+}
+ 
+.copy.grow{
+	font-size: 26px;
+}
+*/
+#copy-white1, #copy-white2, #copy-white3 {
+  visibility: visible; }
+
+#copy-hidden1, #copy-hidden2, #copy-hidden3 {
+  font-size: 26px;
+  position: absolute;
+  color: #fff;
+  opacity: 0; }
+
+#copy-hidden1 {
+  top: 28px;
+  left: 256px; }
+
+#copy-hidden2 {
+  top: 28px;
+  left: 382px;
+  width: 40px; }
+
+#copy-hidden3 {
+  top: 28px;
+  left: 527px; }
+
+#frame-10 {
+  width: 320px;
+  text-align: center; }
+
+/* add css styles here for banner elements that are not covered by setPos() */
+@media only screen and (max-device-width: 480px) {
+  .copy {
+    font-size: 15px; }
+
+  #copy-hidden1, #copy-hidden2, #copy-hidden3 {
+    font-size: 30px; }
+
+  #copy-hidden1 {
+    top: 32px;
+    left: 22px; }
+
+  #copy-hidden2 {
+    top: 32px;
+    left: 160px;
+    width: 40px; }
+
+  #copy-hidden3 {
+    top: 32px;
+    left: 330px; } }

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+}
+button {
+    
+    border: none;
+   
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    outline: none;
+    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+    user-select: none;
+}
+button:hover,
+button:active {
+    
+}
+button:active {
+    font-size: 11px;
+}
+.label {
+    color: #0D2A4D;
+    position: absolute;
+    margin-left: 10px;
+    top: 35px;
+}
+body {
+    margin: 0px;
+}
+#container {
+    position: absolute;
+    display: block;
+    width: 970px;
+    height: 418px;
+}
+#ad {
+    position: relative;
+    display: block;
+    left: 0px;
+    /*border: rgb(149, 173, 163) 1px solid;*/
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#ad.collapsed {
+    width: 968px;
+    /*2px smaller to account for border*/
+    
+    height: 64px;
+    /*2px smaller to account for border*/
+}
+#ad.expanded {
+    width: 968px;
+    /*2px smaller to account for border*/ 
+    height: 416px;
+
+    /*2px smaller to account for border*/
+}
+#banner {
+    position: absolute;
+    display: block;
+    width: 970px;
+    height: 66px;
+    left: 0px;
+    /*background-color: #FFF;*/
+    /*background-image: url(../images/logo.png);*/
+    /*background-position: 10px 10px;*/
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#panel {
+    position: absolute;
+    width: 970px;
+    height: 416px;
+    /*height: 20px;*/
+    background-color: #FFF;
+    /*background-image: url(../images/logo.png);*/
+    /*background-position: 10px 10px;*/
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.expanded #banner {
+    display: none;
+}
+.collapsed #panel {
+    display: none;
+}
+.buttons {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.button {
+    height: 26px;
+    width: 108px;
+}
+.button.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 52px;
+    height:10px;
+    background-image: url(../closead.png);
+}
+.label {
+    font-size: 14px;
+    top: 65px;
+}
+#expand_button_wt{
+    cursor: pointer;
+}
+#expand_button_bk{
+    cursor: pointer;
+}
+#bgExit{
+    cursor: pointer;
+}

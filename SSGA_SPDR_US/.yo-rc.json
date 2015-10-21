@@ -1,0 +1,9 @@
+{
+  "generator-craft-banner": {
+    "bannerName": "SSGA_SPDR_GLOBAL",
+    "width": "300",
+    "height": "250",
+    "size": "30",
+    "numClickTags": "1"
+  }
+}
