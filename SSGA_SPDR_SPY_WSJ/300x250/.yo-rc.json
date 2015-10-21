@@ -1,0 +1,9 @@
+{
+  "generator-craft-banner": {
+    "bannerName": "SSGA_SPDR_SPY_WSJ",
+    "width": "300",
+    "height": "250",
+    "size": "50",
+    "numClickTags": "1"
+  }
+}

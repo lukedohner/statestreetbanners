@@ -1,0 +1,99 @@
+@import 'bourbon';
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: georgia;
+	font-size: 18px;
+	color: #3e692d;
+}
+
+#adBox{
+	width: 768px;
+	height: 90px;
+	overflow: hidden;
+	position: relative;
+	visibility: hidden;
+	background-color: #6fac5e;
+}
+#border{
+	width: 768px - 2px;
+	height: 90px - 2px;
+	border: 1px solid #000;
+	position: absolute;
+	z-index: 1;
+}
+#bgExit {
+  	background-color: rgba(255,255,255,0);
+  	cursor: pointer;
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	z-index: 999;
+}
+
+#logo {
+	@include transform( translate( -50%, -50% ) );
+}
+
+.copy {
+	white-space: nowrap;
+	@include transform( translate( -50%, 0% ) );
+}
+
+#copy-white1, #copy-white2, #copy-white3 {
+	visibility: visible;
+}
+
+#copy-hidden1, #copy-hidden2, #copy-hidden3 {
+	position: absolute;
+	color: #fff;
+	opacity: 0;
+}
+
+#copy-hidden1 {
+	top: 37px;
+	left: 232px;
+}
+
+#copy-hidden2 {
+	top: 37px;
+	left: 318px;
+	width: 40px;	
+}
+
+#copy-hidden3 {
+	top: 37px;
+	left: 418px;
+}
+
+#frame-10 {
+	width: 320px;
+	text-align: center;
+}
+
+/* add css styles here for banner elements that are not covered by setPos() */
+@media only screen and (max-device-width: 480px) {
+	.copy {
+		font-size: 11px;
+	}
+	#copy-hidden1 {
+		top: 37px;
+		left: 227px;
+	}
+
+	#copy-hidden2 {
+		top: 37px;
+		left: 316px;
+		width: 40px;	
+	}
+
+	#copy-hidden3 {
+		top: 37px;
+		left: 418px;
+	}	
+}
